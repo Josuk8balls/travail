@@ -1,0 +1,14 @@
+#Maximum
+
+  def maximum(nombres):
+      if len(nombres)==0:
+          return 0
+      maxi = nombres[0]
+      for i in range(1, len(nombres)):
+          if nombres[i]>maxi:
+              maxi = nombres[i]
+      return maxi
+
+  # Tests
+  assert maximum([98, 12, 104, 23, 131, 9]) == 131
+  assert maximum([-27, 24, -3, 15]) == 24
