@@ -1,5 +1,4 @@
 # Maximum
-
   def maximum(nombres):
       if len(nombres)==0:
           return 0
@@ -16,7 +15,6 @@
 
 
 # Indice première occurence
-
   def indice(element, tableau):
      for i in range(len(tableau)):
           if element == tableau[i]:
