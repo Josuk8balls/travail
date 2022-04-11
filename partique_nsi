@@ -1,4 +1,4 @@
-#Maximum
+# Maximum
 
   def maximum(nombres):
       if len(nombres)==0:
@@ -12,3 +12,20 @@
   # Tests
   assert maximum([98, 12, 104, 23, 131, 9]) == 131
   assert maximum([-27, 24, -3, 15]) == 24
+
+# Indice première occurence
+
+  def indice(element, tableau):
+     for i in range(len(tableau)):
+          if element == tableau[i]:
+              return i
+  
+  
+  # tests
+
+  assert indice(1, [10, 12, 1, 56]) == 2
+  assert indice(1, [1, 50, 1]) == 0
+  assert indice(15, [8, 9, 10, 15]) == 3
+  assert indice(1, [2, 3, 4]) is None
+
+
