@@ -46,3 +46,20 @@
   
   
 
+# Dernière occurence
+  def derniere_occurrence(tableau, cible):
+    occ = 0
+    if cible not in tableau:
+        return len(tableau)
+    else:
+        for i in range(0, len(tableau)):
+            if cible == tableau[i]:
+                occ = i 
+        return occ
+
+  # tests
+  assert derniere_occurrence([5, 3], 1) == 2
+  assert derniere_occurrence([2, 4], 2) == 0
+  assert derniere_occurrence([2, 3, 5, 2, 4], 2) == 3
+  
+  
