@@ -63,3 +63,6 @@
   assert derniere_occurrence([2, 3, 5, 2, 4], 2) == 3
   
   
+#Moyenne simple
+STOP IT 
+GET SOME HELP
