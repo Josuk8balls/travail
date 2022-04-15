@@ -84,3 +84,20 @@ GET SOME HELP
 
 
 
+#Soleil couchant
+   def nb_batiments_eclaires(hauteurs):
+      bat = []
+      ment = 0
+      for i in range(len(hauteurs)):
+          if hauteurs[i] > ment:
+              ment = hauteurs[i]
+              bat.append(ment)
+      return len(bat)
+
+
+  # tests
+  assert 4 == nb_batiments_eclaires([2, 1, 2, 4, 0, 4, 5, 3, 5, 6])
+  assert 1 == nb_batiments_eclaires([0, 3, 1, 2])
+  
+  
+
