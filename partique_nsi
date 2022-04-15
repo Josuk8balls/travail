@@ -100,4 +100,26 @@ GET SOME HELP
   assert 1 == nb_batiments_eclaires([0, 3, 1, 2])
   
   
+  
+#Premier minimim local
+  def indice_arret(hauteurs):
+    trou = hauteurs[0]
+    holl = 0
+    for i in range(1,len(hauteurs)):
+        if trou >= hauteurs[i]:
+            trou = hauteurs[i]
+            holl += 1
+    return holl
+    
+  # Tests
+  hauteurs = [3, 2, 5]
+  assert indice_arret(hauteurs) == 1
+
+  hauteurs = [3, 5]
+  assert indice_arret(hauteurs) == 0
+
+  hauteurs = [10, 8, 7, 5, 5, 4, 3, 6, 6, 5, 4, 12]
+  assert indice_arret(hauteurs) == 6
+  
+
 
